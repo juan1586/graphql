@@ -28,5 +28,16 @@ jobs:
         echo "Fin login"
         
     
-    #- name: Build the Docker image
+    - name: Build docker image
+      run: |
+        docker build -t juan1597/docker-graphql:0.0.2 .
+        
+    - name: Push docker image
+      run: |
+        docker push -t juan1597/docker-graphql:0.0.2 .
+        
+      
+        
+    
+    #- name: Push  Docker image
     #  run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)

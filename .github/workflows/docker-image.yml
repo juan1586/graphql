@@ -34,7 +34,7 @@ jobs:
         
     - name: Push docker image
       run: |
-        docker push -t juan1597/docker-graphql:0.0.2 .
+        docker push -t juan1597/docker-graphql:0.0.2
         
       
         
